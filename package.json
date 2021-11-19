@@ -1,11 +1,21 @@
 {
-    "name": "massanja",
-    "version": "1.2.0",
-    "description": "MassaNja is learning to create Node-CLI.",
-    "bin": {
-        "massanja": "index.js"
-    },
-    "dependencies": {
-        "cli-welcome": "^2.2.2"
-    }
+  "name": "massanja",
+  "version": "1.2.0",
+  "description": "MassaNja is learning to create Node-CLI.",
+  "bin": {
+      "massanja": "index.js"
+  },
+  "dependencies": {
+      "cli-welcome": "^2.2.2"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Massa Nja",
+    "massa",
+    "nja"
+  ],
+  "author": {
+    "email": "leonjampa@yahoo.co.uk",
+    "name": "Leo Njampa"
+  }
 }
