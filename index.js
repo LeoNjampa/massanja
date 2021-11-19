@@ -1,21 +1,25 @@
 #! /usr/bin/env node
 const pkgJSON = require('./package.json');
 const welcome = require('cli-welcome');
+const chalk = require('chalk');
+const log = console.log;
+const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
+const githubClr = chalk.hex(`#6cc644`).bold.inverse;
+const purple = chalk.hex(`#6937FF`).bold.inverse;
+const italic = chalk.italic;
+const dim = chalk.dim;
 
 welcome({
-  title: `Welcome to MassaNja CLI:`,
+  title: `Massa Nja`,
   tagLine: pkgJSON.description,
-  bgColor: `#FADC00`,
+  bgColor: `#6937FF`,
   color: `#000000`,
   bold: true,
   clear: true,
   version: pkgJSON.version
 });
 
-console.log(`
-Leo Njampa - Platform Engineer
-
-A certified MS Azure Solutions Architect and DevOps Platform Engineer with extensive experience
+log(`${italic(`A certified MS Azure Solutions Architect and DevOps Platform Engineer with extensive experience
 leading the design and implementation of robust,flexible and effective technical solutions for a
 varied range of business problems.
 Delivery- and customer-focused with a ‘can-do’ attitude complemented by a proven ability to make 
@@ -27,6 +31,9 @@ for details.
 A problem-solver with strong troubleshooting, technical, soft, verbal and written communication skills. 
 Experienced in leading, owning and teamwork on epics in a cross-functional DevOps team.
 An established professional with a sense of humour and a commitment to ongoing development for 
-myself and the teams I work with.
+myself and the teams I work with.`)}
+
+${twitterClr(` Twitter `)} ${dim(` https://twitter.com/leonjampa`)}
+${githubClr(` Github  `)}  ${dim(`https://github.com/LeoNjampa`)}
 
 `);
