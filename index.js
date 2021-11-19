@@ -1,7 +1,16 @@
 #! /usr/bin/env node
-const clearConsole = require('clear-any-console');
+const pkgJSON = require('./package.json');
+const welcome = require('cli-welcome');
 
-clearConsole();
+welcome({
+  title: `Welcome to MassaNja CLI:`,
+  tagLine: pkgJSON.description,
+  bgColor: `#FADC00`,
+  color: `#000000`,
+  bold: true,
+  clear: true,
+  version: pkgJSON.version
+});
 
 console.log(`
 Leo Njampa - Platform Engineer
