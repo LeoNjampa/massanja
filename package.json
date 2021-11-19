@@ -1,6 +1,6 @@
 {
   "name": "massanja",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "MassaNja is learning to create Node-CLI.",
   "bin": {
     "massanja": "index.js"
