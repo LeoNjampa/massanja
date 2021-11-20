@@ -9,6 +9,13 @@ const purple = chalk.hex(`#6937FF`).bold.inverse;
 const italic = chalk.italic;
 const dim = chalk.dim;
 
+// Alerts
+const sym = require('log-symbols');
+const success = chalk.green;
+const info = chalk.blue;
+const warning = chalk.keyword(`orange`);
+const error = chalk.red.bold;
+
 welcome({
   title: `Massa Nja`,
   tagLine: pkgJSON.description,
@@ -36,4 +43,12 @@ myself and the teams I work with.`)}
 ${twitterClr(` Twitter `)} ${dim(` https://twitter.com/leonjampa`)}
 ${githubClr(` Github  `)}  ${dim(`https://github.com/LeoNjampa`)}
 
+`);
+
+
+log(`
+${sym.success} ${success(`SUCCESS`)} Well done, you did it!
+${sym.info} ${info(`INFO`)} Just leaning to code Node CLI
+${sym.warning} ${warning(`WARNING`)} Don't use the app yet!
+${sym.error} ${error(`ERROR`)} Errors will happen; learn from them.
 `);
