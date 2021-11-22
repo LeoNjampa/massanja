@@ -48,7 +48,10 @@ ${githubClr(` Github  `)}  ${dim(`https://github.com/LeoNjampa`)}
 
 log(`
 ${sym.success} ${success(`SUCCESS`)} Well done, you did it!
-${sym.info} ${info(`INFO`)} Just leaning to code Node CLI
+
+${sym.info} ${info(`INFO`)} Just leaning to code Node CLI.
+
 ${sym.warning} ${warning(`WARNING`)} Don't use the app yet!
+
 ${sym.error} ${error(`ERROR`)} Errors will happen; learn from them.
 `);
